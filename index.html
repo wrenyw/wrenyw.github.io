@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Wren </title>
+        <title> Wren (me) </title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
-            <h1> <b> hello </b> </h1>
+            <h4> hello, and welcome to </h4>
+            <h1> the wrebsite </h1>
         </header>
         <main>
             <p>
-                I have experience making games in both Unity and Godot. 
-                Additionally, I am fluent in several programming languages, 
-                including C#, GDScript, Rust, C#, C++, Java, and Lua.
+                I am Wren. I make cool games and also other stuff.
+            </p>
+            <hr>
+            <header>
+                <h3> things I like: </h3>
+            </header>
+            <p>
+                I am known to like things. These things include:
+                <ul>
+                    <li> Rust </li>
+                    <li> Lua </li>
+                    <li> C# </li>
+                    <li> C++ (kinda sorta) </li>
+                </ul>
+
+                I also dislike things. These things include:
+                <ul>
+                    <li> Java (my enemy...) </li>
+                </ul>
             </p>
 
+            <hr>
+
+            <header>
+                <h2> cool games </h2>
+            </header>
             <div>
-                <h2> Games </h2>
                 <p>
                     Here are some cool games I made.
                 </p>
 
-                <div>
+                <div class="funky">
                     <h3> Mirror Image </h3>
                     <p>
                         Mirror Image is a 2D puzzle-platforming game I made in my sophomore year of high school.
@@ -34,10 +55,14 @@
                         This was my first standalone game.
                         The process of making it taught me a lot about iterative design and responding to player feedback.
                     </p>
-                    <img src="mirrorimage_map.png" width="500"/>
+                    <p>
+                        It has a cool map and stuff too. Each area has a different color scheme and involves a different
+                        mechanic, all building off of the main "reflection" thing.
+                    </p>
+                    <img src="mirrorimage_map.png"/>
                 </div>
 
-                <div>
+                <div class="funky">
                     <h3> Biblically Accurate Library Simulator </h3>
                     <p>
                         Biblically Accurate Library Simulator (BALS) is a 3D horror game set in a library. 
@@ -50,18 +75,19 @@
                         BALS was my first time making a 3D game, and my first time working in a group. 
                         It taught me the basics of 3D modeling. 
                         I had to do a lot of draw-call optimization, 
-                        which included baking static meshes for each shelf. 
-                        Also some manual IK!
+                        which included baking static meshes for each shelf and using a vertex shader
+                        to hide removed books (which used their own instanced meshes). 
+                        Also like navigation and IK and stuff.
                     </p>
                     <p>
-                        It also required a lot of external data processing on the book list, 
+                        It also required a *lot* of external data processing on the book list, 
                         which was originally downloaded as a data dump from openlibrary.org. 
-                        I did the bulk of the processing in Python.
+                        I did the bulk of the processing in horribly uncommented Python.
                     </p>
-                    <img src="bals_data.png" width="500""/>
+                    <img src="bals_data.png"/>
                 </div>
 
-                <div>
+                <div class="funky">
                     <h3> Nearly Every Day Together </h3>
                     <p>
                         Nearly Every Day Together is a 2-player 2D co-op platformer. 
@@ -70,35 +96,72 @@
                     <video autoplay muted loop disablepictureinpicture loading="lazy">
                         <source src="highlight_nedt_smol.webm" type="video/webm"/>
                     </video>
+                    <p>
+                        Unfortunately I didn't get to the whole "co-op" part due to
+                        time constraints, but it's still cool and good I swear.
+                    </p>
+                    <p>
+                        A fun thing with this one was the fact that I made the whole
+                        darn thing myself. Like can you even believe it.
+                    </p>
+                    <p>
+                        I made the stupid stupid mistake of letting myself go too far
+                        and build an entirely custom physics system for it. The advantage
+                        is that it's cool and fun and it lets me do slopes with minimal jank.
+                        The disadvantage is literally everything else.
+                    </p>
+                    <img src="nedt_physics.png"/>
                 </div>
 
-                <div>
+                <div class="funky">
                     <h3> Avery Simulator 2025 </h3>
                     <p>
                         Avery Simulator 2025 is a short visual novel game set in my own house. 
                         I made it in a month (as a birthday present for my sibling) using Godot in my junior year.
-                        It has both 2D and 3D elements.
+                        It is mostly 2D with very few 3D parts.
                     </p>
                     <video autoplay muted loop disablepictureinpicture loading="lazy">
                         <source src="highlight_as2025_smol.webm" type="video/webm"/>
                     </video>
+                    <p>
+                        For this game, I made my own dialogue engine and associated language.
+                        Kinda like LISP, but not. That was fun. Still need to get around to
+                        remaking that for my next game....
+                    </p>
+                    <img src="as2025_dialogue.png"/>
                 </div>
 
-                <div>
+                <div class="funky">
                     <h3> Kate Simulator 2025 </h3>
                     <p>
-                        foo
+                        Another visual novel birthday present, using the same dialogue engine as
+                        Avery Simulator. It's a mix of 2D and 3D elements.
                     </p>
                     <video autoplay muted loop disablepictureinpicture loading="lazy">
                         <source src="highlight_ks2025_smol.webm" type="video/webm"/>
                     </video>
+                    <p>
+                        This one was fun because I got to take a 360-degree
+                        panorama of my bedroom. At least it *was* fun until I had to spend hours
+                        manually fixing the misalignments in the composited image.
+                    </p>
+                    <p>
+                        I had this whole setup for making 3D models based on
+                        photos and using geometry nodes to generate
+                        UVs from the original image. There were a lot
+                        of Blender crashes involved, since I was using the
+                        5.0 beta to get access to those sweet sweet projection matrices.
+                    </p>
+                    <img src="ks2025_model.png"/>
                 </div>
             </div>
 
+            <hr/>
+
             <div>
-                <h2> Assets </h2>
+                <h2> other stuff </h2>
                 <p>
-                    Here are some cool assets I made, outside of game work.
+                    Once I get around to it, there might be some cool assets I made, outside of game work.
                 </p>
             </div>
         </main>

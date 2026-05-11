@@ -1,19 +1,47 @@
-h1, h2, h3, h4 {
-    text-align: center;
-}
-
 body {
     font-family: 'Trebuchet MS';
-    background-color: #27053a;
+    background-color: #370850;
     color: #dad4d4;
 }
 
 main {
-    font-size: 20px;
+    font-size: 16px;
     max-width: 700px;
     margin: auto;
 }
 
+hr {
+    color: #806084;
+}
+
+p {
+    color: #cac3c7;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
 video, img {
-    width: 700px;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.funky {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-block: 10px;
 }
